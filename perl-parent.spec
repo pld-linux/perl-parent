@@ -6,7 +6,7 @@
 %define	pdir	parent
 Summary:	parent - Establish an ISA relationship with base classes at compile time
 Name:		perl-parent
-Version:	0.223
+Version:	0.225
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
@@ -15,7 +15,7 @@ URL:		http://search.cpan.org/dist/parent/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CO/CORION/%{pdir}-%{version}.tar.gz
-# Source0-md5:	e89c37813e8497f1d8bbf223ab18a02d
+# Source0-md5:	cd8a62a28b3fa1c6d43973a9cb6b7796
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
