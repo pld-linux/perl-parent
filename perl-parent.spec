@@ -5,22 +5,29 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	parent
 Summary:	parent - Establish an ISA relationship with base classes at compile time
+Summary(pl.UTF-8):	parent - ustanawianie relacji ISA z klasami bazowymi w czasie kompilacji
 Name:		perl-parent
-Version:	0.225
-Release:	1
+Version:	0.236
+# 0.236 already in perl 5.26
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
+Source0:	http://www.cpan.org/modules/by-authors/id/C/CO/CORION/%{pdir}-%{version}.tar.gz
+# Source0-md5:	c8650f1063f6050f856f854d1dac389d
 URL:		http://search.cpan.org/dist/parent/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CO/CORION/%{pdir}-%{version}.tar.gz
-# Source0-md5:	cd8a62a28b3fa1c6d43973a9cb6b7796
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Allows you to both load one or more modules, while setting up inheritance from those modules at the same time.
+Allows you to both load one or more modules, while setting up
+inheritance from those modules at the same time.
+
+%description -l pl.UTF-8
+Ten moduł pozwala wczytać jeden lub więcej modułów, ustawiając w tym
+samym czasie dziedziczenie tych modułów.
 
 %prep
 %setup -q -n %{pdir}-%{version}
@@ -45,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes 
 %{perl_vendorlib}/parent.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/parent.3pm*
