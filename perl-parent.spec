@@ -7,14 +7,13 @@
 Summary:	parent - Establish an ISA relationship with base classes at compile time
 Summary(pl.UTF-8):	parent - ustanawianie relacji ISA z klasami bazowymi w czasie kompilacji
 Name:		perl-parent
-Version:	0.236
-# 0.236 already in perl 5.26
-Release:	0.1
+Version:	0.237
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/C/CO/CORION/%{pdir}-%{version}.tar.gz
-# Source0-md5:	c8650f1063f6050f856f854d1dac389d
+# Source0-md5:	9c30dfb44a8d749e8e87603d4560cefa
 URL:		http://search.cpan.org/dist/parent/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
