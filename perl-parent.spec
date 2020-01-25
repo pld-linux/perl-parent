@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	parent
 Summary:	parent - Establish an ISA relationship with base classes at compile time
 Summary(pl.UTF-8):	parent - ustanawianie relacji ISA z klasami bazowymi w czasie kompilacji
