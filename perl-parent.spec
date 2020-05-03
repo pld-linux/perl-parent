@@ -13,9 +13,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/C/CO/CORION/%{pdir}-%{version}.tar.gz
 # Source0-md5:	9c30dfb44a8d749e8e87603d4560cefa
-URL:		http://search.cpan.org/dist/parent/
+URL:		https://metacpan.org/release/parent
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
